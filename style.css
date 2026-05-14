@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+
+
+
 :root{
     --cor-de-fundo:#1E1E1E;
     --verde:#6FFF57;
@@ -57,7 +61,8 @@
         .botoes{
             display:block;
         }
-       .ativo{
+
+        .ativo{
             background-color:var(--botao-ativo);
             Border-bottom: 4px solid var(--verde);
         }
