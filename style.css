@@ -66,3 +66,40 @@
             background-color:var(--botao-ativo);
             Border-bottom: 4px solid var(--verde);
         }
+.abas-textos {
+     background-color: var(--texto-fundo);
+     padding: 40px;
+}
+
+    .aba-titulo-principal{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .aba-conteudo-titulo-secundario{
+        text-align: center;
+        color: var(--verde);
+        text-transform: uppercase;
+       
+    }
+
+    @media (min-width:768px) {
+.botoes{
+    display: flex;
+}
+     .botao:first-child{
+        border-radius: 40px 0 0 0;
+      }
+
+
+    @media (min-width:768px) {
+        .botoes{
+            display: flex;
+        }
+             .botao:last-child{
+                border-radius: 40px 000;
+              }
+       
+
+    }
+     }
