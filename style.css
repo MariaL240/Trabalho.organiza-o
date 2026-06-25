@@ -66,6 +66,22 @@
             background-color:var(--botao-ativo);
             Border-bottom: 4px solid var(--verde);
         }
+.aba-conteudo {
+    font-family: 'roboto    ', Courier, monospace;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+
+
 .abas-textos {
      background-color: var(--texto-fundo);
      padding: 40px;
@@ -83,23 +99,37 @@
        
     }
 
-    @media (min-width:768px) {
-.botoes{
-    display: flex;
-}
-     .botao:first-child{
-        border-radius: 40px 0 0 0;
-      }
-
-
-    @media (min-width:768px) {
-        .botoes{
-            display: flex;
-        }
-             .botao:last-child{
-                border-radius: 40px 000;
-              }
-       
-
+    
+@media screen and (min-width:768px) {
+    .botoes{
+        display: flex;
     }
-     }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+padding: 0 16px;
+text-align: center;
+min-width: 100px;
+
+}
+.contador-digito-numero{
+font-size: 80px;
+margin: 0;
+
+}
+.contador-digito-titulo{
+color: var(--verde);
+font-size: 20px;
+margin: 0;
+}
