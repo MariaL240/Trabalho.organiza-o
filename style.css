@@ -58,36 +58,30 @@
        .botao:first-child{
        border-radius:40px 40px 0 0 ;
        }
-        .botoes{
+        .botoes.ativo{
             display:block;
         }
 
         .ativo{
             background-color:var(--botao-ativo);
-            Border-bottom: 4px solid var(--verde);
+            border-bottom: 4px solid var(--verde);
         }
-.aba-conteudo {
-    font-family: 'roboto    ', Courier, monospace;
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
 
+.aba-conteudo.ativo {
+
+    display:block;
+    
+}
+.aba-conteudo{
+    display: none;
+}
 
 .abas-textos {
      background-color: var(--texto-fundo);
      padding: 40px;
 }
 
-    .aba-titulo-principal{
+    .aba-conteudo-titulo-principal{
         font-size: 28px;
         text-align: center;
     }
@@ -98,7 +92,28 @@
         text-transform: uppercase;
        
     }
-
+    .contador{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+    
+    }
+    .contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+    
+    }
+    .contador-digito-titulo{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+    }
     
 @media screen and (min-width:768px) {
     .botoes{
@@ -111,25 +126,4 @@
         border-radius: 0 40px 0 0;
     }
 }
-.contador{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-.contador-digito{
-padding: 0 16px;
-text-align: center;
-min-width: 100px;
-
-}
-.contador-digito-numero{
-font-size: 80px;
-margin: 0;
-
-}
-.contador-digito-titulo{
-color: var(--verde);
-font-size: 20px;
-margin: 0;
-}
